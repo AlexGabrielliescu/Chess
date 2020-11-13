@@ -10,5 +10,3 @@ public class specialMoves {
 		enpassantLocation = loc;
 	}
 }
-//specialMoves.enpassant&&(loc.column+1==realColumn||loc.column-1==realColumn)&&loc.row+1==row&&realColumn==specialMoves.enpassantLocation.column&&row==specialMoves.enpassantLocation.row&&pieces[realColumn][row]==' '
-//specialMoves.enpassant&&(loc.column+1==realColumn||loc.column-1==realColumn)&&loc.row-1==row&&realColumn==specialMoves.enpassantLocation.column&&row==specialMoves.enpassantLocation.row&&pieces[realColumn][row]==' '

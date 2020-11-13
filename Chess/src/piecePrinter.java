@@ -19,15 +19,23 @@ public class piecePrinter {
 		System.out.println("  a   b   c   d   e   f   g   h");
 	}
 	public static void askForNextMove() {
-		Scanner scan = new Scanner(System.in);
-		if(whiteMoves) {
-			System.out.println("White to move:");
-		} else {
-			System.out.println("Black to move:");
+		/*if(King.isCheckMate(pieces, whiteMoves)) {
+			if(whiteMoves) {
+				System.out.println("Black Wins");
+			} else {
+				System.out.println("White Wins");
+			}
+		} else {*/
+			Scanner scan = new Scanner(System.in);
+			if(whiteMoves) {
+				System.out.println("White to move:");
+			} else {
+				System.out.println("Black to move:");
+			}
+			String s = scan.next();
+			movePieces.checkMove(s, whiteMoves, pieces);
 		}
-		String s = scan.next();
-		movePieces.checkMove(s, whiteMoves, pieces);
-	}
+//	}
 	public static void didTheMove() {
 		whiteMoves = !whiteMoves;
 	}
